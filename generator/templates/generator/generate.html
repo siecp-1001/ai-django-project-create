@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Django Project</title>
+</head>
+<body>
+    <h1>Generate Django Project</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>

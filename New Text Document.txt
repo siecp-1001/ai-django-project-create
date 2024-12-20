@@ -1,0 +1,22 @@
+specification = {
+    "project_name": "chekocvb",
+    "app_name": "zfdgh",
+    "models_spec": """
+    {
+        "Product": {
+            "name": "CharField(max_length=100)",
+            "price": "DecimalField(max_digits=10, decimal_places=2)",
+            "description": "TextField()"
+        }
+    }
+    """,
+    "endpoints_spec": """
+    {
+        "list_products": {
+            "path": "products",
+            "method": "GET",
+            "description": "List all products"
+        }
+    }
+    """
+}
