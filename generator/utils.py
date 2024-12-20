@@ -78,8 +78,8 @@ def add_app_to_installed_apps(base_path, project_name, app_name):
         if not installed_apps_code.endswith(",\n"):
             installed_apps_code = installed_apps_code.strip() + ",\n"
 
-        # Append the new app to INSTALLED_APPS
-        installed_apps_code = installed_apps_code.rstrip(",\n") + f", '{app_name}'\n"
+        
+        installed_apps_code = installed_apps_code.rstrip(",\n") + f" '{app_name}',\n"
 
         settings_code[installed_apps_line] = installed_apps_code
 
