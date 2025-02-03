@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import generate_project
+from .views import GenerateProjectView 
 
 urlpatterns = [
-    path("generate/", generate_project, name="generate_project"),
+    path('generate-project/', GenerateProjectView.as_view(), name='generate-project'),
 ]
